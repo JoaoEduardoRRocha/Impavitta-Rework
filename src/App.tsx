@@ -10,6 +10,8 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/effect-fade'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
+import { FaFacebookSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+
 register();
 
 function App() {
@@ -68,7 +70,7 @@ function App() {
       </section>
       
       <h1 className='material-demonstration-section__title'>Conheça a Diretoria</h1>
-      
+
       <article className='about-us'>
         <img
           className='about-us__perfil-img'
@@ -92,6 +94,42 @@ function App() {
           roporciona à <strong>IMPÁVITTA</strong> entender a cultura da empresa e elaborar um mate rial que transmite a 
           essência da organização, passando credibilidade aos potenciais clientes
           </p>   
+        </div>
+
+        <div className='about-us__social-media'>
+          <a 
+            href="https://www.facebook.com/"
+            aria-label="Vai para o facebook"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <FaFacebookSquare
+              size={50} 
+            />
+          </a>
+
+          <a 
+            href="https://www.facebook.com/"
+            aria-label="Vai para o facebook"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <FaInstagramSquare
+              size={50} 
+            />
+          </a>
+
+          <a 
+            href="https://www.facebook.com/"
+            aria-label="Vai para o facebook"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin
+              size={50} 
+            />
+          </a>
+
         </div>
       </article>
 

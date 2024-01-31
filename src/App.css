@@ -19,6 +19,10 @@ body {
   color: var(--color--primary)
 }
 
+a {
+  text-decoration: none;
+}
+
 .carousel-bg {
   background-color: var(--bg--secundary);
 }
@@ -109,4 +113,11 @@ body {
 .about-us__history {
   max-width: 70rem;
   margin: 2rem auto;
+}
+
+.about-us__social-media {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto 5rem auto;
+  gap: 2rem;
 }
