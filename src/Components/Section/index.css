@@ -37,7 +37,7 @@
   align-items: center;
 }
 
-.feature-item__image {
+.feature-image {
   width: 5rem;
 }
 
@@ -97,6 +97,32 @@
 
   .feature-item__description {
     max-width: 50rem;
+  }
+
+  .feature-hero-image {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .feature-section__title {
+    max-width: 28rem;
+    margin: auto;
+    font-size: 2.5rem;
+  }
+
+  .feature-item__title {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+
+  .feature-image {
+    width: 4.5rem;
+  }
+
+  .feature-item__description {
+    max-width: 45rem;
+    font-size: 1.6rem;
   }
 
   .feature-hero-image {
