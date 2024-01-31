@@ -1,4 +1,4 @@
-.section-content {
+.feature-section {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -6,9 +6,39 @@
   max-width: 130rem;
 }
 
-.section-content__h1 {
+.feature-section__title {
+  max-width: 62rem;
+
   color: var(--color--primary);
   font-weight: 500;
   font-size: 5.4rem;
-  max-width: 62rem;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+
+  gap: 2rem;
+  margin-top: 8rem;
+}
+
+.feature-item__image {
+  width: 5rem;
+
+  margin-top: 1rem;
+}
+
+.feature-item-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-item-2__title {
+  color: var(--color--secundary);
+  font-weight: 500;
+}
+
+.feature-item-2__description {
+  max-width: 48rem;
+  color: var(--color--primary);
 }
