@@ -1,0 +1,8 @@
+.section-content {
+
+}
+
+.section-content__h1 {
+  color: var(--color--primary);
+  font-weight: 400;
+}
