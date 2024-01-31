@@ -47,4 +47,9 @@
   max-width: 70rem;
   width: 100%;
   height: auto;
+  
+  border-radius: 2rem;
+  -webkit-box-shadow: 38px 26px 96px -48px rgba(0,0,0,1);
+  -moz-box-shadow: 38px 26px 96px -48px rgba(0,0,0,1);
+  box-shadow: 38px 26px 96px -48px rgba(0,0,0,1);
 }
