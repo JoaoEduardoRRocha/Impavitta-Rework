@@ -9,13 +9,14 @@
   --color--primary: #522771;
   --color--secundary: #F29109;
   --bg--primary: #F9F9F9;
-  --bg--secundary: #FFFBF5;
+  --bg--secundary: #fcf6ee;
 }
 
 body {
   font-size: 1.8rem;
   font-family: 'Poppins', sans-serif;
-  background-color: var(--bg--primary)
+  background-color: var(--bg--primary);
+  color: var(--color--primary)
 }
 
 .carousel-bg {
@@ -33,7 +34,7 @@ body {
   text-align: center;
   color: var(--color--primary);
   font-weight: 500;
-  margin: 5rem auto;
+  margin: 7rem auto 3rem auto;
 }
 
 .material-demonstration-section__img-container {
@@ -62,4 +63,50 @@ body {
 .swiper-button-prev {
   background: transparent;
   color: var(--color--primary)
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 10rem auto;
+
+  width: 100rem;
+  border: 0 1px 1px 1px solid rgb(230, 230, 230);
+  border-radius: 1.5rem;
+
+  -webkit-box-shadow: -26px 200px 300px -25px rgba(89,89,89,0.43);
+  -moz-box-shadow: -26px 200px 300px -25px rgba(89,89,89,0.43);
+  box-shadow: -26px 200px 300px -25px rgba(89,89,89,0.43);
+}
+
+.about-us__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us__perfil-img {
+  display: flex;
+  margin: 5rem auto;
+  border-radius: 50%;
+  width: 25rem;
+}
+
+.about-us__name,
+.about-us__role {
+  text-align: center;
+}
+
+.about-us__name {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.about-us__role {
+  margin-bottom: 3rem;
+}
+
+.about-us__history {
+  max-width: 70rem;
+  margin: 2rem auto;
 }
