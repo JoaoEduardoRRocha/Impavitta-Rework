@@ -24,6 +24,11 @@ const Section: React.FC = () => {
           </p>
         </div>
 
+        <img
+          className='hero-image'
+          src="https://64.media.tumblr.com/19f38b1049af6528948c9a48ad05c74c/969d25c83a3fa691-52/s1280x1920/53d3f7847ea7b710df061ac1f263886c097907e5.pnj" 
+          alt="" 
+        />
       </div>
 
 
