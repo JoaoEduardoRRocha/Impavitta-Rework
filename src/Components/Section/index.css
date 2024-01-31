@@ -1,5 +1,9 @@
 .section-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 
+  max-width: 130rem;
 }
 
 .section-content__h1 {
