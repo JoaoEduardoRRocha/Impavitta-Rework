@@ -18,6 +18,10 @@ body {
   background-color: var(--bg--primary)
 }
 
+.carousel-bg {
+  background-color: var(--bg--secundary);
+}
+
 .material-demonstration-section {
   display: flex;
   flex-direction: column;
@@ -29,16 +33,33 @@ body {
   text-align: center;
   color: var(--color--primary);
   font-weight: 500;
-  margin-bottom: 5rem;
+  margin: 5rem auto;
 }
 
 .material-demonstration-section__img-container {
   display: flex;
   margin: auto;
+  max-width: 70rem;
   gap: 2rem;
 }
 
 .material-demonstration-section__img {
-  width: 25rem;
-  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+.material-demonstration-section__img img {
+  width: 30rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--color--primary);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: transparent;
+  color: var(--color--primary)
 }
