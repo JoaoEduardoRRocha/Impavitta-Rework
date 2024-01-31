@@ -4,5 +4,7 @@
 
 .section-content__h1 {
   color: var(--color--primary);
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 5.4rem;
+  max-width: 62rem;
 }
