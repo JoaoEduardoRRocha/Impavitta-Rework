@@ -1,6 +1,7 @@
 .feature-section {
   margin: auto;
 
+  padding: 2rem;
   max-width: 130rem;
 }
 
@@ -58,7 +59,7 @@
 }
 
 .feature-hero-image {
-  max-width: 70rem;
+  max-width: 60rem;
   width: 100%;
   height: auto;
   margin-left: 5rem;
@@ -68,4 +69,21 @@
   -webkit-box-shadow: 38px 26px 96px -48px rgba(0,0,0,1);
   -moz-box-shadow: 38px 26px 96px -48px rgba(0,0,0,1);
   box-shadow: 38px 26px 96px -48px rgba(0,0,0,1);
+}
+
+@media (max-width: 1300px) {
+  .feature-section__title {
+    max-width: 55rem;
+
+    font-size: 4.5rem;
+  }
+
+  .feature-item__description {
+    max-width: 50rem;
+  }
+
+  .feature-hero-image {
+    max-width: 50rem;
+    width: 100%;
+  }
 }
