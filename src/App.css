@@ -17,3 +17,28 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg--primary)
 }
+
+.material-demonstration-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.material-demonstration-section__title {
+  text-align: center;
+  color: var(--color--primary);
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+.material-demonstration-section__img-container {
+  display: flex;
+  margin: auto;
+  gap: 2rem;
+}
+
+.material-demonstration-section__img {
+  width: 25rem;
+  margin-bottom: 5rem;
+}
