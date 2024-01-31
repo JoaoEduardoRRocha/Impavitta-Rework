@@ -87,3 +87,19 @@
     width: 100%;
   }
 }
+
+@media (max-width: 1200px) {
+  .feature-section__title {
+    max-width: 55rem;
+    margin: auto;
+    font-size: 4.5rem;
+  }
+
+  .feature-item__description {
+    max-width: 50rem;
+  }
+
+  .feature-hero-image {
+    display: none;
+  }
+}
