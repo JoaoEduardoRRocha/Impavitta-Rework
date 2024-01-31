@@ -6,9 +6,14 @@
 
 :root {
   font-size: 62.5%;
+  --color--primary: #522771;
+  --color--secundary: #F29109;
+  --bg--primary: #F9F9F9;
+  --bg--secundary: #FFFBF5;
 }
 
 body {
   font-size: 1.8rem;
   font-family: 'Poppins', sans-serif;
+  background-color: var(--bg--primary)
 }
