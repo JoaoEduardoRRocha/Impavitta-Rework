@@ -39,6 +39,33 @@ function App() {
     },
   ]
 
+  const referenceContent = [
+    {
+      id: 1,
+      name: 'Sr. Síndico',
+      owner: 'Rodolfo Furtado Lima',
+      description: '"Quando pensei que havia atingido o máximo de qualidade na imagem da minha empresa, a Impávitta fez algo que eu não esperava e ficou maravilhoso!"',
+    },
+    {
+      id: 2,
+      name: 'Administradora Ômega',
+      owner: 'Jorge Cláudio',
+      description: '"A Impávitta foi essencial no início do meu negócio. Me ajudaram a dar uma identidade visual profissional à minha empresa."',
+    },
+    {
+      id: 3,
+      name: 'Empresa 3',
+      owner: 'Fulano',
+      description: 'A longo Text',
+    },
+    {
+      id: 4,
+      name: 'Empresa 4',
+      owner: 'Fulano',
+      description: 'A longo Text',
+    },
+  ]
+
   return (
     <div className="App">
       <Section />
@@ -131,6 +158,43 @@ function App() {
           </a>
         </div>
       </article>
+      
+      <article className='reference'>
+        <h1 className='reference__title'>Depoimentos de Empresas Renomadas que aprovam os serviços da Impávitta:</h1>
+
+        <div className='reference-content'>
+        <Swiper
+            slidesPerView={1}
+            pagination={{ clickable: true}}
+            navigation  
+            >
+              {referenceContent.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <div className='reference-container'>
+                    <img 
+                      className='reference-container__img'
+                      src="https://64.media.tumblr.com/89b15594d8d6ffcdfa2a1ab1ee6a03a6/7488e86fdd1778e8-05/s540x810/6b53696eb52c49f7393c23ee6b013c23bb6448ca.pnj" 
+                      alt="Imagem de Escritório" 
+                    />
+                    <div className='reference-container2'>
+                      <div className='reference-container2__name'>
+                        {item.name}
+                      </div>
+                      <div className='reference-container2__owner'>
+                        {item.owner}
+                      </div>
+                      <div className='reference-container2__description'>
+                        {item.description}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+        </div>
+      </article>
+
+      
     </div>
   );
 }
