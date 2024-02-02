@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Section from './Components/Section'
+import Footer from './Components/Footer'
 
 import { register } from 'swiper/element/bundle'
 import 'swiper/css'
@@ -10,7 +11,7 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/effect-fade'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import { FaFacebookSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
 
 register();
 
@@ -156,6 +157,17 @@ function App() {
               size={40} 
             />
           </a>
+
+          <a 
+            href="https://www.facebook.com/"
+            aria-label="Vai para o facebook"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <FaWhatsappSquare
+              size={40} 
+            />
+          </a>
         </div>
       </article>
       
@@ -194,7 +206,7 @@ function App() {
         </div>
       </article>
 
-      
+      <Footer></Footer>
     </div>
   );
 }

@@ -8,8 +8,10 @@
   font-size: 62.5%;
   --color--primary: #522771;
   --color--secundary: #F29109;
+  --color--third: #fcf6ee;
   --bg--primary: #F9F9F9;
   --bg--secundary: #fcf6ee;
+  --bg--third: #3a1753;
 }
 
 body {
