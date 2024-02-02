@@ -104,7 +104,7 @@ function App() {
             rel="noopener noreferrer"
           >
             <FaFacebookSquare
-              size={50} 
+              size={40} 
             />
           </a>
 
@@ -115,7 +115,7 @@ function App() {
             rel="noopener noreferrer"
           >
             <FaInstagramSquare
-              size={50} 
+              size={40} 
             />
           </a>
 
@@ -126,13 +126,11 @@ function App() {
             rel="noopener noreferrer"
           >
             <FaLinkedin
-              size={50} 
+              size={40} 
             />
           </a>
-
         </div>
       </article>
-
     </div>
   );
 }
