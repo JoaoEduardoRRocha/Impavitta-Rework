@@ -195,6 +195,11 @@ a {
   .about-us {
     width: 80rem;
   }
+
+  .reference-container {
+    max-width: 80rem;
+
+  }
 }
 
 @media (max-width: 900px) {
@@ -206,11 +211,28 @@ a {
     max-width: 40rem;
     margin: 2rem auto;
   }
+
+  .reference-container {
+    max-width: 60rem;
+  }
+
+  .reference-container__img {
+    display: none;
+  }
+
+  .reference-container2 {
+    max-width: 55rem;
+    padding: 2rem 2rem 7rem 3rem;
+  }
 }
 
 @media (max-width: 700px) {
   .about-us {
     width: 40rem;
+  }
+
+  .material-demonstration-section__title {
+    font-size: 2.2rem;
   }
 
   .about-us__perfil-img {
@@ -223,6 +245,18 @@ a {
   .about-us__history {
     max-width: 30rem;
     margin: 2rem auto;
+  }
+
+  .reference__title {
+    font-size: 2.2rem;
+  }
+
+  .reference-container {
+    max-width: 33rem;
+  }
+
+  .reference-container2 {
+    max-width: 27rem;
   }
 
 
@@ -243,5 +277,13 @@ a {
   .about-us__history {
     max-width: 25rem;
     margin: 2rem auto;
+  }
+
+  .reference-container {
+    max-width: 30rem;
+  }
+
+  .reference-container2 {
+    max-width: 27rem;
   }
 }
