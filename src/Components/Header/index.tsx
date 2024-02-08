@@ -2,6 +2,8 @@ import React from 'react'
 import "./index.css";
 
 const Header: React.FC = () => {
+
+
   return (
     <header className='header-container'>
       <nav className='nav-container'>
@@ -36,9 +38,14 @@ const Header: React.FC = () => {
       </div>
 
       <div>
-        <p>
-          Profissionais com mais de 20 anos de experiência no mercado de administra ção do Rio de Janeiro e Niterói.
+        <p className='header-phrase'>
+          Profissionais com mais de <span>20 anos de experiência</span> no mercado de administra ção do <span>Rio de Janeiro</span> e <span>Niterói</span>.
         </p>
+      </div>
+
+      <div className="header-slide">
+        <div className="header-slide__img-slide">
+        </div>
       </div>
     </header>
   );

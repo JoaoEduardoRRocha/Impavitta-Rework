@@ -163,6 +163,10 @@ a {
   gap: 2rem;
 }
 
+.about-us__social-media a {
+  color: var(--color--primary);
+}
+
 .reference {
   display: flex;
   flex-direction: column;

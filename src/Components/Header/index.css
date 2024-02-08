@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  background-color: var(--bg--primary);
 }
 
 .nav-container__logo {
@@ -18,7 +20,7 @@
 .nav-text-container {
   display: flex;
   flex-direction: column;
-  margin: 8rem auto 6.3rem auto;
+  margin: 6rem auto 6.3rem auto;
 
   max-width: 67rem;
   font-size: 5.4rem;
@@ -37,8 +39,9 @@ strong {
   display: flex;
   margin: auto auto 3rem auto;
   justify-content: center;
-  gap: 1.5rem
+  gap: 1.5rem;
 
+  position: relative;
 }
 
 .header-btn-container__know-more,
@@ -58,4 +61,40 @@ strong {
   border: 0.1rem solid #522771;
   color: var(--color--primary);
   background-color: white;
+}
+
+.header-phrase {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+.header-slide {
+  overflow: hidden;
+}
+
+.header-slide__img-slide {
+  position: absolute;
+  top: 0;
+
+  background: url(https://64.media.tumblr.com/368d360aeaf96e8925e80a92b1844bbf/2b076c099460bb19-cb/s2048x3072/25ac60233d6ebeef7205b240c8a3029f8849ec2b.pnj);
+  width: 200vw;
+  height: 85vh;
+
+  animation: slideshow 20s linear infinite;
+  opacity: 50%;
+  z-index: -1;
+}
+
+@keyframes slideshow {
+  0% {
+    background-position-x: 22vw;
+  }
+  100% {
+    background-position-x: -200vw;
+  }
 }
