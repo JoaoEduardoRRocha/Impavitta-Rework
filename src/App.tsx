@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Section from './Components/Section'
 import Footer from './Components/Footer'
+import Modal from './Components/Modal'
+import Header from './Components/Header'
 
+import { IoIosClose } from "react-icons/io";
 import { register } from 'swiper/element/bundle'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -11,32 +14,42 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/effect-fade'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaWhatsappSquare, FaPlay } from "react-icons/fa";
 
 register();
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [btnClass, setBtnClass] = useState('btn-play');
+
+  const handlePlayClick = () => {
+    setIsModalOpen(true);
+    setBtnClass('btn-play.open');
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setBtnClass('btn-play');
+  };
 
   const carouselContent = [
     {
       id: 1,
-      name: 'Empresa 1',
-      url: "https://64.media.tumblr.com/7dfeb73bf2f0e23a35f88dd18d0e07ba/510ca137ea8aef87-93/s1280x1920/7279dba6fa5e00d82443e18329a2d5af34430fc3.pnj",
+      name: 'Ferreira Rodrigues',
+      url: "https://64.media.tumblr.com/f8b95dc1e34f02e567d7e17defe1143f/7791e34b24a8236e-f5/s640x960/1b84b084ca5fcb526a97cee18413f451ed087a20.pnj",
+      videoUrl: 'https://va.media.tumblr.com/tumblr_s8fbmfiuGD1a5im12_720.mp4',
     },
     {
       id: 2,
-      name: 'Empresa 2',
-      url: "https://64.media.tumblr.com/7dfeb73bf2f0e23a35f88dd18d0e07ba/510ca137ea8aef87-93/s1280x1920/7279dba6fa5e00d82443e18329a2d5af34430fc3.pnj",
+      name: 'Senhor Síndico',
+      url: "https://64.media.tumblr.com/472b366009c2e38bffa32ac0e309b8bc/fdf61758cc664729-a7/s640x960/e212bb6f132cba9154745592b3eea5efeb8f00de.pnj",
+      videoUrl: 'https://va.media.tumblr.com/tumblr_s8fdjdOTFX1a5im12_720.mp4',
     },
     {
       id: 3,
-      name: 'Empresa 3',
-      url: "https://64.media.tumblr.com/7dfeb73bf2f0e23a35f88dd18d0e07ba/510ca137ea8aef87-93/s1280x1920/7279dba6fa5e00d82443e18329a2d5af34430fc3.pnj",
-    },
-    {
-      id: 4,
-      name: 'Empresa 4',
-      url: "https://64.media.tumblr.com/7dfeb73bf2f0e23a35f88dd18d0e07ba/510ca137ea8aef87-93/s1280x1920/7279dba6fa5e00d82443e18329a2d5af34430fc3.pnj",
+      name: 'CtrolR$indicos',
+      url: "https://64.media.tumblr.com/02d03b721a62a97fbceee869a36d2419/6ed7360450f251c3-e9/s640x960/fd69169f4fcec413d3b53683712f11acdc7c5583.pnj",
+      videoUrl: 'https://va.media.tumblr.com/tumblr_s8fdlnOMBv1a5im12_720.mp4',
     },
   ]
 
@@ -69,6 +82,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Section />
 
       <section className='material-demonstration-section'>
@@ -84,10 +98,31 @@ function App() {
                 <SwiperSlide key={item.id}>
                   <div className='material-demonstration-section__img-container'>
                     <div className='material-demonstration-section__img'>
-                      <img 
-                        src={item.url}
-                        alt='Imagem dos materiais das empresas' 
-                      />
+                      <button className='material-demonstration-section__btn-show-modal' onClick={() => setIsModalOpen(!isModalOpen)}>
+                      {isModalOpen ? (
+                          null
+                        ) : (
+                          <FaPlay
+                            className={btnClass}
+                            size={40}
+                            onClick={handlePlayClick}
+                          />
+                        )}
+                        <img 
+                          src={item.url}
+                          alt='Imagem dos materiais das empresas' 
+                        />
+                        {isModalOpen ? (
+                          <div className='container-btn-close'>
+                            <IoIosClose 
+                              size={40} 
+                              className='btn-close' 
+                              onClick={handleCloseModal} 
+                            />
+                            <Modal url={item.videoUrl} />
+                          </div>
+                        ) : null}
+                      </button>
                     </div>
                   </div>
                 </SwiperSlide>
