@@ -22,14 +22,16 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [btnClass, setBtnClass] = useState('btn-play');
 
-  const handlePlayClick = () => {
-    setIsModalOpen(true);
+  const handleOpenModal = () => {
     setBtnClass('btn-play.open');
+    setIsModalOpen(true);
+    console.log('open')
   };
 
   const handleCloseModal = () => {
-    setIsModalOpen(false);
     setBtnClass('btn-play');
+    setIsModalOpen(false);
+    console.log('close')
   };
 
   const carouselContent = [
@@ -98,30 +100,31 @@ function App() {
                 <SwiperSlide key={item.id}>
                   <div className='material-demonstration-section__img-container'>
                     <div className='material-demonstration-section__img'>
-                      <button className='material-demonstration-section__btn-show-modal' onClick={() => setIsModalOpen(!isModalOpen)}>
+                      <button className='material-demonstration-section__btn-show-modal'>
                       {isModalOpen ? (
-                          null
+                          <div className='container-btn-close'>
+                              <div
+                                className='btn-close'
+                                onClick={handleCloseModal}
+                              >
+                                <IoIosClose
+                                  size={40}
+                                  className='btn-close-border'
+                                />
+                              </div>
+                              <Modal url={item.videoUrl} />
+                          </div>
                         ) : (
                           <FaPlay
                             className={btnClass}
                             size={40}
-                            onClick={handlePlayClick}
+                            onClick={handleOpenModal}
                           />
                         )}
                         <img 
                           src={item.url}
                           alt='Imagem dos materiais das empresas' 
                         />
-                        {isModalOpen ? (
-                          <div className='container-btn-close'>
-                            <IoIosClose 
-                              size={40} 
-                              className='btn-close' 
-                              onClick={handleCloseModal} 
-                            />
-                            <Modal url={item.videoUrl} />
-                          </div>
-                        ) : null}
                       </button>
                     </div>
                   </div>

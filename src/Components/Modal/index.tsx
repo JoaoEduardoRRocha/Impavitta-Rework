@@ -14,6 +14,7 @@ const Modal: React.FC<ModalProps> = ({ url }) => {
             controls
             width={800}
             autoPlay
+            muted={true}
           />
         </div>
       </div>
