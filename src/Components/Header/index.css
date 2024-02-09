@@ -82,10 +82,10 @@ span {
   top: 0;
 
   background: url(https://64.media.tumblr.com/368d360aeaf96e8925e80a92b1844bbf/2b076c099460bb19-cb/s2048x3072/25ac60233d6ebeef7205b240c8a3029f8849ec2b.pnj);
-  width: 200vw;
+  width: 99.1vw;
   height: 85vh;
 
-  animation: slideshow 20s linear infinite;
+  animation: slideshow 30s linear infinite;
   opacity: 50%;
   z-index: -1;
 }
