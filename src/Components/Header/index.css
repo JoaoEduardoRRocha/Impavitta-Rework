@@ -1,11 +1,12 @@
 .header-container {
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
 }
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  margin: auto;
 
   background-color: var(--bg--primary);
 }
