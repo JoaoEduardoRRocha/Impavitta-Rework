@@ -134,7 +134,7 @@ function App() {
           </div>
         </div> 
       </section>
-      
+
       <h1 className='material-demonstration-section__title'>Conheça a Diretoria</h1>
 
       <article className='about-us'>

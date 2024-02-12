@@ -1,8 +1,8 @@
 import React from 'react'
 import "./index.css";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header: React.FC = () => {
-
 
   return (
     <header className='header-container'>
@@ -16,6 +16,12 @@ const Header: React.FC = () => {
           <div>O que fazemos</div>
           <div>Sobre nós</div>
           <div>Contato</div>
+        </div>
+
+        <div>
+          <RxHamburgerMenu
+            className='nav-container__btn-nav-close'
+          />
         </div>
       </nav>
 
