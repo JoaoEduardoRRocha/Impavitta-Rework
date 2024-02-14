@@ -1,55 +1,55 @@
 import React from 'react'
 import "./index.css";
-import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
     <footer className='footer-section'>
-        <div className='footer-section__social-media'>
-          <a 
-            href="https://www.facebook.com/"
-            aria-label="Vai para o facebook"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <FaFacebookSquare
-              size={40} 
-            />
-          </a>
+      <img 
+        className='footer-section__logo'
+        src="https://64.media.tumblr.com/2f691476c0d8d69c952453a5e64c21ba/318566baa1d46bac-fa/s1280x1920/49f4221f3e57571be5f4c3a938f9463fe839c955.pnj" 
+        alt="Logo" 
+      />
 
-          <a 
-            href="https://www.facebook.com/"
-            aria-label="Vai para o facebook"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <FaInstagramSquare
-              size={40} 
-            />
-          </a>
-
-          <a 
-            href="https://www.facebook.com/"
-            aria-label="Vai para o facebook"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin
-              size={40} 
-            />
-          </a>
-
-          <a 
-            href="https://www.facebook.com/"
-            aria-label="Vai para o facebook"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <FaWhatsappSquare
-              size={40} 
-            />
-          </a>
+      <div className='footer-section__social-media'>
+        <div className='footer-section__social-media-title'>
+          Nossas redes:
         </div>
+        <a
+          href="https://www.facebook.com/"
+          aria-label="Vai para o facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Facebook
+        </a>
+
+        <a
+          href="https://www.facebook.com/"
+          aria-label="Vai para o facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://www.facebook.com/"
+          aria-label="Vai para o facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Linkedin
+        </a>
+
+        <a
+          href="https://www.facebook.com/"
+          aria-label="Vai para o facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Whatsapp
+        </a>
+      </div>
     </footer>
   );
 };
