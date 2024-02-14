@@ -71,10 +71,10 @@
   box-shadow: 38px 26px 96px -48px rgba(0,0,0,1);
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1380px) {
   .feature-section__title {
     max-width: 55rem;
-
+    margin-top: -4rem;
     font-size: 4.5rem;
   }
 

@@ -112,23 +112,27 @@ span {
 
 @media (max-width: 1380px) {
   .nav-container__logo {
-    width: 35rem;
+    width: 30rem;
     padding: 0 5rem;
   }
 
   .nav-text-container {
     display: flex;
     flex-direction: column;
-    margin: 6rem auto 6.3rem auto;
+    margin: 4rem auto 6.3rem auto;
   
-    max-width: 67rem;
-    font-size: 5.4rem;
+    max-width: 60rem;
+    font-size: 4.5rem;
     font-weight: bold;
+  }
+
+  .header-btn-container {
+    margin-top: -3rem;
   }
 
   .header-slide__img-slide {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
   }
 }
 
