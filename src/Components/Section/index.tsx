@@ -56,7 +56,7 @@ const Section: React.FC = () => {
                 src="https://64.media.tumblr.com/e5bb0eba6e08d9f08af93abaac4ac536/d259805793099990-00/s250x400/8142c9d1e84cde9381082e8e15363dd35f5f1f17.pnj"
                 alt=""
               />
-              <h1 className="feature-item__title">Carta Profissional</h1>
+              <h1 className="feature-item__title">Papel Timbrado</h1>
             </div>
 
             <p className="feature-item__description">
