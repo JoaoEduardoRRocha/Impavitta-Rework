@@ -4,6 +4,7 @@ import Section from './Components/Section'
 import Footer from './Components/Footer'
 import Modal from './Components/Modal'
 import Header from './Components/Header'
+import Button from './Components/Button'
 
 import { IoIosClose } from "react-icons/io";
 import { register } from 'swiper/element/bundle'
@@ -239,7 +240,9 @@ function App() {
           </div>
         </article>
 
-        <Footer></Footer>
+        <Button />
+        <Footer />
+
       </div>
       {isModalOpen && (
         <div className="modal-overlay">

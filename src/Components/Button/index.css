@@ -1,0 +1,19 @@
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 22rem;
+  padding: 2rem 0;
+  margin: 2rem auto;
+  border-radius: 3rem 0.5rem 3rem 0.5rem;
+
+  background-color: var(--bg--button);
+  color: var(--color--third);
+  transition: transform 0.3s ease-in-out;
+}
+
+.button-container:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
