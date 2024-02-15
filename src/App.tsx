@@ -21,15 +21,18 @@ register();
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [btnClass, setBtnClass] = useState('btn-play');
+  const [currentVideoUrl, setCurrentVideoUrl] = useState('');
 
-  const handleOpenModal = () => {
+  const handleOpenModal = (url: string) => {
     setBtnClass('btn-play.open');
+    setCurrentVideoUrl(url);
     setIsModalOpen(true);
     console.log('open')
   };
 
   const handleCloseModal = () => {
     setBtnClass('btn-play');
+    setCurrentVideoUrl('');
     setIsModalOpen(false);
     console.log('close')
   };
@@ -83,148 +86,136 @@ function App() {
   ]
 
   return (
-    <div className="App">
-      <Header />
-      <Section />
+    <>
+      <div className="App">
+        <Header />
+        <Section />
 
-      <section className='material-demonstration-section'>
-        <div className='carousel-bg'>
-        <h1 className='material-demonstration-section__title'>Demonstrações de Material 3D</h1>
-          <div className='carousel'>
-            <Swiper
-            slidesPerView={1}
-            pagination={{ clickable: true}}
-            navigation  
-            >
-              {carouselContent.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <div className='material-demonstration-section__img-container'>
-                    <div className='material-demonstration-section__img'>
-                      <button className='material-demonstration-section__btn-show-modal'>
-                      {isModalOpen ? (
-                          <div className='container-btn-close'>
-                              <div
-                                className='btn-close'
-                                onClick={handleCloseModal}
-                              >
-                                <IoIosClose
-                                  size={40}
-                                  className='btn-close-border'
-                                />
-                              </div>
-                              <Modal url={item.videoUrl} />
-                          </div>
-                        ) : (
-                          <FaPlay
-                            className={btnClass}
-                            size={40}
-                            onClick={handleOpenModal}
+        <section className='material-demonstration-section'>
+          <div className='carousel-bg'>
+            <h1 className='material-demonstration-section__title'>Demonstrações de Material 3D</h1>
+            <div className='carousel'>
+              <Swiper
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                navigation
+              >
+                {carouselContent.map((item) => (
+                  <SwiperSlide key={item.id}>
+                    <div className='material-demonstration-section__img-container'>
+                      <div className='material-demonstration-section__img'>
+                        <button className='material-demonstration-section__btn-show-modal'>
+                          {!isModalOpen && (
+                            <FaPlay
+                              className={btnClass}
+                              size={40}
+                              onClick={() => handleOpenModal(item.videoUrl)}
+                            />
+                          )}
+                          <img
+                            src={item.url}
+                            alt='Imagem dos materiais das empresas'
                           />
-                        )}
-                        <img 
-                          src={item.url}
-                          alt='Imagem dos materiais das empresas' 
-                        />
-                      </button>
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
           </div>
-        </div> 
-      </section>
+        </section>
 
-      <h1 className='material-demonstration-section__title'>Conheça a Diretoria</h1>
+        <h1 className='material-demonstration-section__title'>Conheça a Diretoria</h1>
 
-      <article className='about-us'>
-        <img
-          className='about-us__perfil-img'
-          src="https://64.media.tumblr.com/731a64c4a95093294f34ea847ec624a3/36ad268a37e2a8a6-08/s500x750/57ee05c677ef3bfb61487f500a10dde70781eb21.pnj" 
-          alt="Foto de Perfil de Eduardo Rocha" 
-        />
-        <div className='about-us__content'>
-          <div className='about-us__name'>Eduardo Capote</div>
-          <div className='about-us__role'>Diretor e Fundador</div>
+        <article className='about-us'>
+          <img
+            className='about-us__perfil-img'
+            src="https://64.media.tumblr.com/731a64c4a95093294f34ea847ec624a3/36ad268a37e2a8a6-08/s500x750/57ee05c677ef3bfb61487f500a10dde70781eb21.pnj"
+            alt="Foto de Perfil de Eduardo Rocha"
+          />
+          <div className='about-us__content'>
+            <div className='about-us__name'>Eduardo Capote</div>
+            <div className='about-us__role'>Diretor e Fundador</div>
 
-          <p className='about-us__history'>
-            Fundador da empresa, Eduardo Capote possui uma experiência de mais de 20 anos de mercado, 
-            sendo mais de 15 anos como Gerente Comercial, além de 15 anos de experiência acadêmica,
-            tendo lecionado diversas disciplinas no curso de Administração de Empresas, Marketing e RH, 
-            como por exemplo Marketing Estratégico, Marketing Digital, Estratégia Empresarial, Análise de Investimentos, 
-            Análise de demonstrativos Financeiros, Gestão de RH, Desenvolvimento e Comportamento Humano, 
-            Gestão de Serviços, Liderança, dentre outras.
-          </p>
-          <p className='about-us__history'>
-          A pluralidade de conhecimentos adquiridos ao longo de mais de 20 anos de experiência no mercado, p
-          roporciona à <span>IMPÁVITTA</span> entender a cultura da empresa e elaborar um mate rial que transmite a 
-          essência da organização, passando credibilidade aos potenciais clientes
-          </p>   
-        </div>
+            <p className='about-us__history'>
+              Fundador da empresa, Eduardo Capote possui uma experiência de mais de 20 anos de mercado,
+              sendo mais de 15 anos como Gerente Comercial, além de 15 anos de experiência acadêmica,
+              tendo lecionado diversas disciplinas no curso de Administração de Empresas, Marketing e RH,
+              como por exemplo Marketing Estratégico, Marketing Digital, Estratégia Empresarial, Análise de Investimentos,
+              Análise de demonstrativos Financeiros, Gestão de RH, Desenvolvimento e Comportamento Humano,
+              Gestão de Serviços, Liderança, dentre outras.
+            </p>
+            <p className='about-us__history'>
+              A pluralidade de conhecimentos adquiridos ao longo de mais de 20 anos de experiência no mercado, p
+              roporciona à <span>IMPÁVITTA</span> entender a cultura da empresa e elaborar um mate rial que transmite a
+              essência da organização, passando credibilidade aos potenciais clientes
+            </p>
+          </div>
 
-        <div className='about-us__social-media'>
-          <a 
-            href="https://www.facebook.com/"
-            aria-label="Vai para o facebook"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <FaFacebookSquare
-              size={40} 
-            />
-          </a>
+          <div className='about-us__social-media'>
+            <a
+              href="https://www.facebook.com/"
+              aria-label="Vai para o facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookSquare
+                size={40}
+              />
+            </a>
 
-          <a 
-            href="https://www.facebook.com/"
-            aria-label="Vai para o facebook"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <FaInstagramSquare
-              size={40} 
-            />
-          </a>
+            <a
+              href="https://www.facebook.com/"
+              aria-label="Vai para o facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagramSquare
+                size={40}
+              />
+            </a>
 
-          <a 
-            href="https://www.facebook.com/"
-            aria-label="Vai para o facebook"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin
-              size={40} 
-            />
-          </a>
+            <a
+              href="https://www.facebook.com/"
+              aria-label="Vai para o facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin
+                size={40}
+              />
+            </a>
 
-          <a 
-            href="https://www.facebook.com/"
-            aria-label="Vai para o facebook"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <FaWhatsappSquare
-              size={40} 
-            />
-          </a>
-        </div>
-      </article>
-      
-      <article className='reference'>
-        <h1 className='reference__title'>Depoimentos de Empresas Renomadas que aprovam os serviços da Impávitta:</h1>
+            <a
+              href="https://www.facebook.com/"
+              aria-label="Vai para o facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsappSquare
+                size={40}
+              />
+            </a>
+          </div>
+        </article>
 
-        <div className='reference-content'>
-        <Swiper
-            slidesPerView={1}
-            pagination={{ clickable: true}}
-            navigation  
+        <article className='reference'>
+          <h1 className='reference__title'>Depoimentos de Empresas Renomadas que aprovam os serviços da Impávitta:</h1>
+
+          <div className='reference-content'>
+            <Swiper
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              navigation
             >
               {referenceContent.map((item) => (
                 <SwiperSlide key={item.id}>
                   <div className='reference-container'>
-                    <img 
+                    <img
                       className='reference-container__img'
-                      src="https://64.media.tumblr.com/89b15594d8d6ffcdfa2a1ab1ee6a03a6/7488e86fdd1778e8-05/s540x810/6b53696eb52c49f7393c23ee6b013c23bb6448ca.pnj" 
-                      alt="Imagem de Escritório" 
+                      src="https://64.media.tumblr.com/89b15594d8d6ffcdfa2a1ab1ee6a03a6/7488e86fdd1778e8-05/s540x810/6b53696eb52c49f7393c23ee6b013c23bb6448ca.pnj"
+                      alt="Imagem de Escritório"
                     />
                     <div className='reference-container2'>
                       <div className='reference-container2__name'>
@@ -241,11 +232,28 @@ function App() {
                 </SwiperSlide>
               ))}
             </Swiper>
-        </div>
-      </article>
+          </div>
+        </article>
 
-      <Footer></Footer>
-    </div>
+        <Footer></Footer>
+      </div>
+      {isModalOpen && (
+        <div className="modal-overlay">
+          <div className='container-btn-close'>
+            <div
+              className='btn-close'
+              onClick={handleCloseModal}
+            >
+              <IoIosClose
+                size={40}
+                className='btn-close-border'
+              />
+            </div>
+            <Modal url={currentVideoUrl} />
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 
