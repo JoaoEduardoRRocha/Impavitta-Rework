@@ -129,3 +129,16 @@
     display: none;
   }
 }
+@media (max-width: 450px) {
+  .feature-section__title {
+    margin: -7rem auto auto auto;
+  }
+}
+
+@media (max-width: 350px) {
+  .feature-section__title {
+    margin: auto;
+  }
+}
+
+

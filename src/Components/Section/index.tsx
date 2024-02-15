@@ -7,7 +7,7 @@ const Section: React.FC = () => {
       <h1 className='feature-section__title'>
         Por que você deveria nos escolher para sua melhor experiência
       </h1>
-
+      
       <div className='feature'>
         <div className="feature-item">
           <div className="feature-item-content">
