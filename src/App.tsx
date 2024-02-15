@@ -73,15 +73,15 @@ function App() {
     },
     {
       id: 3,
-      name: 'Empresa 3',
-      owner: 'Fulano',
-      description: 'A longo Text',
+      name: 'Administradora Sifra',
+      owner: 'Dr. Francisco Nazareth',
+      description: 'Eu recomendo a Impávitta para sua empresa. São muito profissionais e vão ajudar a alavancar o seu negócio',
     },
     {
       id: 4,
-      name: 'Empresa 4',
-      owner: 'Fulano',
-      description: 'A longo Text',
+      name: 'Ferreira & Rodrigues',
+      owner: 'Dr. Fellipe Ferreira',
+      description: 'Contratei os serviços da Impávitta e não me arrependi. Pelo contrário. Fiquei muito satisfeito com o material que fizeram para a minha empresa!',
     },
   ]
 
