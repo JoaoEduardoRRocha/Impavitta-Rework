@@ -15,6 +15,7 @@ const Footer: React.FC = () => {
           Nossas redes:
         </div>
         <a
+          className='social-footer'
           href="https://www.facebook.com/"
           aria-label="Vai para o facebook"
           target="_blank"
@@ -23,7 +24,8 @@ const Footer: React.FC = () => {
           Facebook
         </a>
 
-        <a
+        <a 
+          className='social-footer'
           href="https://www.instagram.com/impavitta"
           aria-label="Vai para o facebook"
           target="_blank"
@@ -33,6 +35,7 @@ const Footer: React.FC = () => {
         </a>
 
         <a
+          className='social-footer'
           href="https://www.linkedin.com/in/imp%C3%A1vitta/"
           aria-label="Vai para o facebook"
           target="_blank"
@@ -42,6 +45,7 @@ const Footer: React.FC = () => {
         </a>
 
         <a
+          className='social-footer'
           href="https://www.youtube.com/@impavittaconsultoriapessoa1324"
           aria-label="Vai para o facebook"
           target="_blank"

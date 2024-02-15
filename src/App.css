@@ -71,6 +71,12 @@ a {
   background-color: transparent;
 
   position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.material-demonstration-section__btn-show-modal:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
 }
 
 .btn-play {
@@ -152,6 +158,11 @@ a {
 
 .about-us__social-media a {
   color: var(--color--primary);
+}
+
+.social-icon:hover {
+  transform: scale(1.03);
+  filter: brightness(1.2);
 }
 
 .reference {

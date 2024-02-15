@@ -161,6 +161,7 @@ function App() {
               rel="noopener noreferrer"
             >
               <FaFacebookSquare
+                className='social-icon'
                 size={40}
               />
             </a>
@@ -172,6 +173,7 @@ function App() {
               rel="noopener noreferrer"
             >
               <FaInstagramSquare
+                className='social-icon'
                 size={40}
               />
             </a>
@@ -183,6 +185,7 @@ function App() {
               rel="noopener noreferrer"
             >
               <FaLinkedin
+                className='social-icon'
                 size={40}
               />
             </a>
@@ -194,6 +197,7 @@ function App() {
               rel="noopener noreferrer"
             >
               <FaWhatsappSquare
+                className='social-icon'
                 size={40}
               />
             </a>
