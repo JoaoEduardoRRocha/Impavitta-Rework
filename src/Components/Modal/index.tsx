@@ -10,6 +10,7 @@ const Modal: React.FC<ModalProps> = ({ url }) => {
       <div className='modal-container'>
         <div className='modal-content'>
           <video
+            className='video-size'
             src={url}
             controls
             width={800}
