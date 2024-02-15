@@ -19,7 +19,7 @@ const Header: React.FC = () => {
           <div>Sobre nós</div>
           <div>Contato</div>
         </div>
-      
+
 
         <div>
           <RxHamburgerMenu
@@ -38,12 +38,23 @@ const Header: React.FC = () => {
       </div>
 
       <div className='header-btn-container'>
-        <button className='header-btn-container__know-more'>
-          Saibe Mais
-        </button>
-        <button className='header-btn-container__contact-us'>
+        <a
+          className='header-btn-container__know-more'
+          href='https://api.whatsapp.com/send?phone=552197932-6739&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento.'
+          aria-label="Vai para o Whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Saiba Mais
+        </a>
+        <a
+          className='header-btn-container__contact-us'
+          href='https://api.whatsapp.com/send?phone=552197932-6739&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento.'
+          aria-label="Vai para o Whatsapp"
+          target="_blank"
+          rel="noopener noreferrer">
           Fale Conosco
-        </button>
+        </a>
       </div>
 
       <div>

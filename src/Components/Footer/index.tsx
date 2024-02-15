@@ -4,10 +4,10 @@ import "./index.css";
 const Footer: React.FC = () => {
   return (
     <footer className='footer-section'>
-      <img 
+      <img
         className='footer-section__logo'
-        src="https://64.media.tumblr.com/2f691476c0d8d69c952453a5e64c21ba/318566baa1d46bac-fa/s1280x1920/49f4221f3e57571be5f4c3a938f9463fe839c955.pnj" 
-        alt="Logo" 
+        src="https://64.media.tumblr.com/2f691476c0d8d69c952453a5e64c21ba/318566baa1d46bac-fa/s1280x1920/49f4221f3e57571be5f4c3a938f9463fe839c955.pnj"
+        alt="Logo"
       />
 
       <div className='footer-section__social-media'>
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
         </a>
 
         <a
-          href="https://www.facebook.com/"
+          href="https://www.instagram.com/impavitta"
           aria-label="Vai para o facebook"
           target="_blank"
           rel="noopener noreferrer"
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         </a>
 
         <a
-          href="https://www.facebook.com/"
+          href="https://www.linkedin.com/in/imp%C3%A1vitta/"
           aria-label="Vai para o facebook"
           target="_blank"
           rel="noopener noreferrer"
@@ -42,12 +42,12 @@ const Footer: React.FC = () => {
         </a>
 
         <a
-          href="https://www.facebook.com/"
+          href="https://www.youtube.com/@impavittaconsultoriapessoa1324"
           aria-label="Vai para o facebook"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Whatsapp
+          YouTube
         </a>
       </div>
     </footer>
