@@ -236,11 +236,11 @@ function App() {
                   </div>
                 </SwiperSlide>
               ))}
+              <Button />
             </Swiper>
           </div>
         </article>
 
-        <Button />
         <Footer />
 
       </div>
