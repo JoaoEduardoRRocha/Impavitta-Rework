@@ -17,7 +17,7 @@ const Section: React.FC = () => {
                 src="https://64.media.tumblr.com/6cc01f373079e53dac1014b362920540/f334489a53182dad-69/s250x400/9ad3cf90d11144af762ad57fd33cbfb150114ec6.pnj"
                 alt=""
               />
-              <h1 className="feature-item__title">Mala Direto Eficaz</h1>
+              <h1 className="feature-item__title">Mala Direta</h1>
             </div>
 
             <p className="feature-item__description">
