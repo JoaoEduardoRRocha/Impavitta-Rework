@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: auto;
 
   background-color: var(--bg--primary);
 }

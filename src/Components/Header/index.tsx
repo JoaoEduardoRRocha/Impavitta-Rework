@@ -7,16 +7,19 @@ const Header: React.FC = () => {
   return (
     <header className='header-container'>
       <nav className='nav-container'>
-        <img
-          className='nav-container__logo'
-          src='https://64.media.tumblr.com/a7deea1f18f6efd83b88b1516c640e3b/97346d27a726b23c-00/s1280x1920/9f7259a744529f93194b727a996a50bf6e038931.pnj'
-          alt='Logotipo da Impavitta'
-        />
+        <div>
+          <img
+            className='nav-container__logo'
+            src='https://64.media.tumblr.com/a7deea1f18f6efd83b88b1516c640e3b/97346d27a726b23c-00/s1280x1920/9f7259a744529f93194b727a996a50bf6e038931.pnj'
+            alt='Logotipo da Impavitta'
+          />
+        </div>
         <div className='nav-container__links'>
           <div>O que fazemos</div>
           <div>Sobre nós</div>
           <div>Contato</div>
         </div>
+      
 
         <div>
           <RxHamburgerMenu
