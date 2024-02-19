@@ -168,8 +168,8 @@ function App() {
             </a>
 
             <a
-              href="https://www.facebook.com/"
-              aria-label="Vai para o facebook"
+              href="https://www.instagram.com/impavitta"
+              aria-label="Vai para o Instagram"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -180,8 +180,8 @@ function App() {
             </a>
 
             <a
-              href="https://www.facebook.com/"
-              aria-label="Vai para o facebook"
+              href="https://www.linkedin.com/in/imp%C3%A1vitta/"
+              aria-label="Vai para o Linkedin"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -192,8 +192,8 @@ function App() {
             </a>
 
             <a
-              href="https://www.facebook.com/"
-              aria-label="Vai para o facebook"
+              href="https://api.whatsapp.com/send?phone=552197932-6739&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento."
+              aria-label="Vai para o Whatsapp"
               target="_blank"
               rel="noopener noreferrer"
             >

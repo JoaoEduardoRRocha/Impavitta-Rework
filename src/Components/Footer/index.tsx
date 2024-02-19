@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
         <a 
           className='social-footer'
           href="https://www.instagram.com/impavitta"
-          aria-label="Vai para o facebook"
+          aria-label="Vai para o Instagram"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
         <a
           className='social-footer'
           href="https://www.linkedin.com/in/imp%C3%A1vitta/"
-          aria-label="Vai para o facebook"
+          aria-label="Vai para o Linkedin"
           target="_blank"
           rel="noopener noreferrer"
         >
