@@ -26,15 +26,6 @@ const Header: React.FC = () => {
 
       <div className='header-btn-container'>
         <a
-          className='header-btn-container__know-more'
-          href='https://api.whatsapp.com/send?phone=552197932-6739&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento.'
-          aria-label="Vai para o Whatsapp"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Saiba Mais
-        </a>
-        <a
           className='header-btn-container__contact-us'
           href='https://api.whatsapp.com/send?phone=552197932-6739&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento.'
           aria-label="Vai para o Whatsapp"
@@ -42,12 +33,6 @@ const Header: React.FC = () => {
           rel="noopener noreferrer">
           Fale Conosco
         </a>
-      </div>
-
-      <div>
-        <p className='header-phrase'>
-          Profissionais com mais de <span>20 anos de experiência</span> no mercado de administra ção do <span>Rio de Janeiro</span> e <span>Niterói</span>.
-        </p>
       </div>
 
       <div className="header-slide">

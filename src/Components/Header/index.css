@@ -53,18 +53,11 @@ strong {
   transition: transform 0.3s ease-in-out;
 }
 
-.header-btn-container__know-more {
+.header-btn-container__contact-us {
   color: white;
   background-color: var(--color--primary);
 }
 
-.header-btn-container__contact-us {
-  border: 0.1rem solid #522771;
-  color: var(--color--primary);
-  background-color: white;
-}
-
-.header-btn-container__know-more:hover,
 .header-btn-container__contact-us:hover {
   transform: scale(1.1);
   filter: brightness(1.2);
